@@ -1,0 +1,168 @@
+
+.wrapper{
+  position: relative;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.header{
+  width: 100%;
+  height: 30px;
+  background-color: slategrey;
+  padding: 20px;
+  position: relative;
+}
+
+/*list*/
+
+.list{
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-left: 200px;
+  min-width: 300px;
+}
+
+/*list Item*/
+
+.item{
+  height: 140px;
+}
+
+.listItem, 
+.listItemHover {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  position: relative;
+}
+
+.listItem, 
+.button{
+  border: 2px solid slategrey;
+  border-radius: 5px;
+  position: relative;
+}
+
+.listItem:hover{
+  opacity: 0.8;
+}
+
+.title,
+.description,
+.new-description,
+.new-title{
+  width: 130px;
+  margin: 10px auto;
+  background-color: transparent;
+  border: 0px solid white;
+  text-align: center;
+  padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.title:focused{
+  background-color: red;
+}
+
+.date,
+.description{
+  font-size: 12px;
+  padding: 0;
+}
+
+.description,
+{
+  height: 50px;
+  margin: auto;
+  word-wrap: break-word;
+  overflow: hidden;
+
+}
+
+textarea {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.button:hover{
+  background-color: slategrey;
+  color: white;
+}
+
+/*adding deleting and updating*/
+
+
+.additem {
+  border-radius: 5px;
+  border: 2px solid slategrey;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.delete{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+
+.listItemHover .item .delete{
+  
+  color: black;
+}
+
+
+
+
+.title, .new-title{
+  font-size: 15px;
+}
+
+
+
+.updatebutton{
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.date{
+  font-size: 10px;
+  padding: 0;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.button{
+  width: 135px;
+  height: 20px;
+  margin-top: 10px;
+
+}
+
+
+
+
+/*title field should be focused to prompt the user to begin typing. */
