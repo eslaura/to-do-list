@@ -1,3 +1,4 @@
+import {default as UUID} from "node-uuid";
 import React, { Component } from 'react';
 
 class AddItem extends Component {
@@ -11,7 +12,10 @@ class AddItem extends Component {
     }
   }
 
-
+ 
+  componentWillMount() {
+    this.id = UUID.v4();
+  }
 
   handleSubmit(e){
     
@@ -21,7 +25,7 @@ class AddItem extends Component {
     this.setState({ newItem:{
       title: this.refs.title.value,
       description: this.refs.description.value,
-      id: Math.floor((Math.random() * 100000) + 1),
+      id: UUID.v4(),
       date: new Date().getDate() + "-" + new Date().getMonth() + "-" + new Date().getFullYear()
     }}, function(){
       this.props.addItem(this.state.newItem);

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://eslaura.github.io/to-do-list/",
   "dependencies": {
+    "node-uuid": "^1.4.8",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
